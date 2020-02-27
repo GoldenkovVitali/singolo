@@ -2,28 +2,31 @@
   font-family: "LatoWeb";
   src: url("assets/fonts/Lato-Regular.ttf") format("truetype");
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
+  
 }
 @font-face {
   font-family: "LatoWebBlack";
   src: url("assets/fonts/Lato-Black.ttf") format("truetype");
   font-style: normal;
-  font-weight: normal;
+  font-weight: 700;
+ 
 }
 
 @font-face {
   font-family: "LatoWebBold";
   src: url("assets/fonts/Lato-Bold.ttf") format("truetype");
   font-style: normal;
-  font-weight: normal;
+  font-weight: 900;
+  
 }
 
 @font-face {
   font-family: "LatoWebLight";
   src: url("assets/fonts/Lato-Light.ttf") format("truetype");
   font-style: normal;
-  font-weight: normal;
-}
+  font-weight: 300;
+  }
 
 @font-face {
   font-family: "LatoWebThin";
@@ -37,317 +40,180 @@ html {
 }
 
 body {
-  margin: auto;
+  margin: 0;
   font-family: "LatoWeb", sans-serif;
   background-color: #f2f2f2;
   background-size: 100%;
+  width: 1020px;
 }
 
-/*header*/
+/* section portfolio*/
 
-.header {
-  background-color: #2d303a;
-  border-bottom: 6px solid #323746;
+
+
+.portfolio {
+ margin: 0;
+ padding: 0;
+ width: 100vw;
+ width: 1020px;
+ background-color: #2d303a;
+ border-bottom: 6px solid #323746;
 }
 
-.header-wrapper {
+.wrapper {
   width: 1020px;
   margin: 0 auto;
 }
-
-.nav-container {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  height: 89px;
+.portfolio-wrapper {
+  padding: 34px 20px 20px 40px;
 }
 
-.main-nav {
-  list-style: none;
-  display: flex;
-  flex: 1;
-  padding: 9px 3px 0px 453px;
-  font-size: 1.2rem;
-  justify-content: space-between;
-  margin: 0;
-}
-
-.main-nav a {
-  color: #fff;
-  text-decoration: none;
-}
-
-.main-nav a:hover {
-  color: #f06c64;
-}
-
-#contact {
-  margin-right: 3em;
-}
-.logo {
-  margin-top: 18px;
-}
-.logo a {
-  font-size: 2.5rem;
-  line-height: 6px;
-  color: white;
-  font-family: "LatoWebBold";
-  padding-left: 41px;
-  text-decoration: none;
-  letter-spacing: -0.7px;
-}
-.logo a:hover {
-  color: #ee5052;
-}
-
-.logo a span {
-  color: #ee5052;
-}
-
-.dot {
-  color: #505050;
-  font-size: 1.2em;
-  margin-top: -1px;
-}
-
-/* ======Mobiles Section===== */
-
-.mobile-section {
-  background: #f06c64;
-  border-bottom: 6px solid #ea676b;
-}
-
-.mobile-wrapper {
-  width: 1020px;
-  margin: 0 auto;
-  overflow: hidden;
-  height: 594px;
-}
-
-.mobile {
-  width: 10px;
-  height: 10px;
-  justify-content: center;
-  margin-left: 10px;
-  margin-left: 111px;
-  margin-top: -17px;
-}
-
-.mobile2 {
-  display: inline-block;
-  justify-content: center;
-  width: 10px;
-  height: 10px;
-  margin-left: 302px;
-  margin-top: 76px;
-}
-
-.arrow-left {
-  float: left;
-  margin-top: 288px;
-  margin-left: 42px;
-}
-.arrow-right {
-  float: right;
-  margin-right: 40px;
-  margin-top: 288px;
-}
-
-.arrow-left:hover {
-  background-image: url("assets/chev3.png");
-}
-
-.arrow-right:hover {
-  background-image: url("assets/chev2.png");
-}
-
-/* ======Service Section===== */
-
-.our-servises-wrapper {
-  background-color: #f2f2f2;
-  border-bottom: 6px solid #ffffff;
-  width: 1020px;
-  margin: 0 auto;
-  height: 494px;
-}
-
-.our-servises-container {
-  margin: 0 auto;
-  width: 940px;
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-  flex-wrap: wrap;
-  color: #666d89;
-}
-
-.our-services {
-  display: flex;
-  flex: 1;
-  flex-wrap: wrap;
-  justify-content: center;
-  flex-direction: row;
-  margin-left: -20px;
-}
-
-.service-heading {
-  padding-top: 35px;
-  margin: 0 auto;
-  width: 940px;
-  margin-bottom: 9px;
-  overflow: hidden;
-}
-
-.service-heading-h1 {
+.portfolio__header {
   font-size: 3rem;
-  font-family: "LatoWebBlack";
-  letter-spacing: -0.15px;
-}
-.service-heading p {
-  font-size: 1.8rem;
-  line-height: 30px;
-  word-spacing: 1.1px;
-  font-family: "LatoWebLight";
-  margin-top: -7px;
-  color: #767e9e;
-}
-
-.service-heading .service-heading-content {
-  word-spacing: 0px;
-  margin-top: -18px;
-}
-
-.text-dec {
-  color: #767e9e;
-  font-size: 1.2rem;
-  letter-spacing: 0px;
-  word-spacing: 0px;
-  font-family: lato;
-  font-family: "LatoWeb";
-  line-height: 21px;
-  text-overflow: clip;
-  text-align: justify;
-}
-
-.feature {
-  display: flex;
-  flex-direction: row;
-  flex: 1;
-  flex-basis: 33.3%;
-  margin-bottom: -5px;
-}
-
-.feature-icon {
-  display: flex;
-  justify-content: center;
-  flex: 1;
-  padding-right: 20px;
-  padding-left: 20px;
-}
-
-.feature-description {
-  width: 220px;
-  height: 127px;
-  overflow: hidden;
-}
-
-.img-container {
-  margin-top: 19px;
-}
-
-.feature h2 {
-  font-size: 1.8rem;
-  margin-bottom: -3px;
   font-family: "LatoWebBlack";
   letter-spacing: -0.2px;
   color: #666d89;
 }
-/* section portfolio*/
 
-.wrapper {
-    width: 1020px;
-    margin: 0 auto;
+.portfolio__text {
+  margin-top: -3px;
+  font-size: 1.8rem;
+  letter-spacing: 0px;
+  font-family: "LatoWebLight";
+  color: #767e9e;
 }
 
-.portfolio {
-    background-color: #2d303a;
-    border-bottom: 6px solid #323746;
+.buttons__section {
+  margin-top: -3px;
+  width: 290px;
 }
 
-.portfolio-wrapper {
-    padding: 34px 20px 20px 40px;
-}
-
-.portfolio-header {
-    font-size: 3rem;
-    font-family: "LatoWebBlack";
-    letter-spacing: -0.2px;
-    color: #666d89;
-}
-
-.portfolio-text {
-    margin-top: -3px;
-    font-size: 1.8rem;
-    letter-spacing: 0px;
-    font-family: "LatoWebLight";
-    color: #767e9e;
-  }
-
-.buttons-section {
-    margin-top: -3px;
-    width: 290px;
-}
-
-.buttons-ul {
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-    padding-left: 0px;
+.buttons__ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding-left: 0px;
 }
 
 .button {
-    height: 22px;
-    background-color: #2d303a;
-    border: 1px solid #666d89;
-    border-radius: 5px;
-    font-size: 1.2rem;
-    font-family: "LatoWeb";
-    color: #767e9e;
-} 
+  height: 22px;
+  background-color: #2d303a;
+  border: 1px solid #666d89;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  font-family: "LatoWeb";
+  color: #767e9e;
+}
 
 .button:hover {
-    cursor: pointer;
-    color: #dedede;
-    border-color: #c5c5c5;
+  cursor: pointer;
+  color: #dedede;
+  border-color: #c5c5c5;
 }
 
 .portfolio-container {
-   /*on the Flex*/ 
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    width: 940px;
-    height: 601px;
-    align-content: space-between;
-    overflow: hidden;
-    margin-top: 19px;
-    margin-bottom: 47px;
-    /*on the Grid
-    display: grid;
-    grid-template-columns: repeat(4, 240px);
-    grid-template-rows: repeat(3, 207px);*/
-  }
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 940px;
+  height: 601px;
+  align-content: space-between;
+  overflow: hidden;
+  margin-top: 19px;
+  margin-bottom: 47px;
+ }
 
-.portfolio-image{
-  width: 220px; 
-  height:187px;
+.portfolio__image {
+  width: 220px;
+  height: 187px;
 }
-.portfolio-image:nth-child(n+13){
+.portfolio__image:nth-child(n + 13) {
   display: none;
 }
 
-.about_us {
-    padding-top: 5px;
-    background-color: #f2f2f2;
-    border-bottom: 6px solid #ffffff;
+/* section About-us*/
+.about-us {
+  padding: 0;
+  margin: 0;
+  width: 1020px;
+  padding-top: 2px;
+  background-color: #f2f2f2;
+  border-bottom: 6px solid #ffffff;
+}
+
+.about-us-wrapper {
+  padding: 57px 1px 1px 40px;
+}
+
+.about-us__header {
+  padding: 0;
+  margin: 0;
+  font-size: 30px;
+  font-family: "LatoWebBold";
+  color: #666d89;
+}
+
+.about-us__text {
+  margin-top: 17px;
+  text-align: justify;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: -0.23px;
+  color: #767e9e;
+  width: 940px;
+}
+
+.about-us-container {
+ display: grid;
+ overflow: hidden;
+ margin: 46px 0 62px 0px;
+ grid-template-columns: 320px 320px 320px;
+ grid-template-rows: 300px 111px 35px;
+}
+
+.about-us__profiles {
+  padding-top: 17px;
+  overflow: hidden;
+ }
+
+.about-us__profile-name {
+  font-size: 18px;
+  line-height: 18px;
+  font-family: "LatoWebBold";
+  color: #666d89;
+  display: inline-block;
+  max-height: 18px;
+  max-width: 150px;
+  white-space: nowrap;
+   
+}
+
+.about-us__profile-description {
+  font-size: 12px;
+  line-height: 21px;
+  color: #767e9e;
+  margin-top: 10px;
+  font-family: "LatoWeb";
+  text-align: justify;
+  padding-right: 20px;
+  display: inline-block;
+}
+
+.Adam .about-us__profile-description {
+  letter-spacing: -0.06px;
+}
+
+.about-us__icon {
+  margin-right: 6px;
+  width: 32px;
+  height:32px;
+}
+
+.about-us__image{
+  width: 300px;
+  width: 300px;
+}
+
+.about-us__icon:hover {
+  cursor: pointer;
 }
