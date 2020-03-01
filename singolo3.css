@@ -1,0 +1,119 @@
+@font-face {
+  font-family: "LatoWeb";
+  src: url("assets/fonts/Lato-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "LatoWebBlack";
+  src: url("assets/fonts/Lato-Black.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "LatoWebBold";
+  src: url("assets/fonts/Lato-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: "LatoWebLight";
+  src: url("assets/fonts/Lato-Light.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "LatoWebThin";
+  src: url("assets/fonts/Lato-Thin.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  margin: 0;
+  font-family: "LatoWeb", sans-serif;
+  background-color: #f2f2f2;
+  background-size: 100%;
+  width: 1020px;
+}
+/*section "contact-information"*/
+
+.contact-information__wrapper {
+  padding: 0;
+  margin: 0;
+  width: 1020px;
+  margin: 0 auto;
+}
+
+.contact-information {
+  padding: 0;
+  margin: 0;
+  background-color: #f06c64;
+  border-bottom: 6px solid #ea676b;
+  color: #f0d8d9;
+}
+
+.wrapper-contacts {
+  padding: 59px 0 0 40px;
+}
+
+.contact-information__header {
+  padding: 0;
+  margin: 0;
+  font-size: 30px;
+  font-family: "LatoWebBold";
+  font-size: 30px;
+  color: #f0d8d9;
+}
+
+.contact-information__text {
+  padding: 0;
+  margin: 0;
+  font-family: "LatoWebLight";
+  font-size: 18px;
+  padding-top: 18px;
+  line-height: 30px;
+  width: 940px;
+  text-align: justify;
+}
+
+.contact-information__container {
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 600px 350px;
+  grid-template-rows: 430px;
+  margin-top: 28px;
+  margin-bottom: 17px;
+}
+
+.contacts-item-form {
+  text-align: center;
+}
+
+.contacts-form__input {
+  border: none;
+  padding: 0;
+  margin: 0;
+  height: 38px;
+  border-radius: 5px;
+  background-color: #d6564f;
+  color: #f48c8f;
+  width: 604px;
+  margin-top: 16px;
+  padding-left: 15px;
+  font-size: 12px;
+  line-height: 22px;
+  font-family: "LatoWeb";
+}
+.submit {
+  float: left;
+  width: 300px;
+}
