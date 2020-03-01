@@ -2,5 +2,5 @@
 
 | Final | 
 | - |
-| **[Full site deploy](https://GoldenkovVitali.github.io/Singolo)** | 
+| **[Full site deploy](https://github.com/GoldenkovVitali/GoldenkovVitali.github.io)** | 
 
