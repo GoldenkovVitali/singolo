@@ -43,6 +43,8 @@ body {
   background-size: 100%;
   width: 1020px;
 }
+
+
 /*section "contact-information"*/
 
 .contact-information__wrapper {
@@ -67,9 +69,8 @@ body {
 .contact-information__header {
   padding: 0;
   margin: 0;
-  font-size: 30px;
+  font-size: 3rem;
   font-family: "LatoWebBold";
-  font-size: 30px;
   color: #f0d8d9;
 }
 
@@ -77,7 +78,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: "LatoWebLight";
-  font-size: 18px;
+  font-size: 1.8rem;
   padding-top: 18px;
   line-height: 30px;
   width: 940px;
@@ -109,11 +110,134 @@ body {
   width: 604px;
   margin-top: 16px;
   padding-left: 15px;
-  font-size: 12px;
+  font-size: 1.2rem;
   line-height: 22px;
   font-family: "LatoWeb";
 }
 .submit {
   float: left;
   width: 300px;
-} 
+}
+
+.contacts-form__textarea {
+  border: none;
+  padding: 0;
+  margin: 0;
+  height: 38px;
+  border-radius: 5px;
+  background-color: #d6564f;
+  color: #f48c8f;
+  width: 604px;
+  margin-top: 16px;
+  height: 195px;
+  padding-top: 7px;
+  padding-left: 15px;
+  font-size: 1.2rem;
+  line-height: 22px;
+  font-family: "LatoWeb";
+  resize: none;
+}
+
+.contacts-form__input::placeholder,
+.contacts-form__textarea::placeholder {
+  color: #f48c8f;
+}
+
+.contacts-item-info {
+  padding-top: 13px;
+  padding-left: 40px;
+}
+
+.contacts-info__header {
+  padding: 0;
+  margin: 0;
+  font-size: 1.8rem;
+  font-family: "LatoWebBold";
+  letter-spacing: 0.1px;
+  line-height: 24px;
+}
+
+.contacts-info__description {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 23px;
+  padding-top: 7px;
+  width: 300px;
+  font-size: 1.2rem;
+  line-height: 22px;
+  letter-spacing: -0.03px;
+  text-align: justify;
+  font-family: "LatoWeb";
+}
+
+.contacts-info__address {
+  padding: 0;
+  margin: 0;
+  background: url("assets/location-icon.png") 3px 2px no-repeat;
+}
+
+.contacts-info__phone {
+  padding: 0;
+  margin: 0;
+  background: url("assets/phone-icon.png") 1px 2px no-repeat;
+  margin-top: 6px;
+}
+
+.contacts-info__email {
+  padding: 0;
+  margin: 0;
+  background: url("assets/mail-icon.png") 0 5px no-repeat;
+  margin-top: 7px;
+}
+
+.contacts-info__address,
+.contacts-info__phone,
+.contacts-info__email {
+  padding-left: 23px;
+  font-size: 12px;
+  width: 120px;
+  font-family: "LatoWeb";
+}
+
+.phone-link,
+.email-link {
+  text-decoration: none;
+  color: #f0d8d9;
+}
+
+.phone-link:hover,
+.email-link:hover {
+  text-decoration: underline;
+}
+
+.footer {
+  background-color: #2d303a;
+}
+
+.wrapper-footer {
+  padding: 22px 40px 22px 42px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__text {
+  margin: 0;
+  padding-top: 13px;
+  font-size: 1.2rem;
+  color: #666d89;
+  line-height: 6px;
+  letter-spacing: -0.19px;
+}
+
+.footer-icons {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  width: 152px;
+  justify-content: space-between;
+  padding-left: 6px;
+}
+
+.footer__icon:hover {
+  cursor: pointer;
+}
