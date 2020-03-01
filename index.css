@@ -41,7 +41,6 @@ body {
   font-family: "LatoWeb", sans-serif;
   background-color: #f2f2f2;
   background-size: 100%;
-  width: 1020px;
 }
 
 /*header*/
@@ -116,7 +115,7 @@ body {
 .mobile-section {
   background: #f06c64;
   border-bottom: 6px solid #ea676b;
-  width: 1020px;
+  margin: 0 auto;
 }
 
 .mobile-wrapper {
@@ -164,10 +163,12 @@ body {
 }
 
 /* ======Service Section===== */
-
-.our-servises-wrapper {
+.our-servises {
   background-color: #f2f2f2;
   border-bottom: 6px solid #ffffff;
+}
+
+.our-servises-wrapper {
   width: 1020px;
   margin: 0 auto;
   height: 494px;
@@ -267,10 +268,9 @@ body {
 /* section portfolio*/
 
 .portfolio {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   width: 100vw;
-  width: 1020px;
   background-color: #2d303a;
   border-bottom: 6px solid #323746;
 }
@@ -280,7 +280,7 @@ body {
   margin: 0 auto;
 }
 .portfolio-wrapper {
-  padding: 34px 20px 20px 40px;
+  padding: 34px 20px 20px 32px;
 }
 
 .portfolio__header {
@@ -349,8 +349,7 @@ body {
 /* section About-us*/
 .about-us {
   padding: 0;
-  margin: 0;
-  width: 1020px;
+  margin: 0 auto;
   padding-top: 2px;
   background-color: #f2f2f2;
   border-bottom: 6px solid #ffffff;
@@ -503,7 +502,14 @@ body {
 }
 .submit {
   float: left;
-  width: 300px;
+  width: 100px;
+  text-align: center;
+  padding-left: 0px;
+  border: 1px solid white;
+}
+.submit:hover {
+  cursor: pointer;
+  background: whitesmoke;
 }
 
 .contacts-form__textarea {
