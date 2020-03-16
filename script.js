@@ -7,7 +7,10 @@ const VERTMOBILE = document.getElementById("mobile-vertical");
 const VERTMOBILEBLACK = document.getElementById("mobile-vertical-black");
 const HORMOBILE = document.getElementById("mobile-horisontal");
 const HORMOBILEBLACK = document.getElementById("mobile-horisontal-black");
-
+const NAVIGATIONMOBILEVERTIKAL = document.getElementById("Navigation-mobile-vertical");
+const NAVIGATIONMOBILEVERTIKALBLACK = document.getElementById("Navigation-mobile-vertical-black");
+const NAVIGATIONMOBILEHORISONTAL = document.getElementById("Navigation-mobile-horisontal");
+const NAVIGATIONMOBILEHORISONTALBLACK = document.getElementById("Navigation-mobile-horisontal-black");
 //--------------------MENU-------------------------------
 MENU.addEventListener("click", event => {
   MENU.querySelectorAll("a").forEach(el => el.classList.remove("active"));
@@ -17,23 +20,23 @@ MENU.addEventListener("click", event => {
 });
 
 //------------------mobile-section--------display----------------
-VERTMOBILE.onclick = function() {
+NAVIGATIONMOBILEVERTIKAL.onclick = function() {
   VERTMOBILE.style.display = VERTMOBILE.style.display == "none" ? "" : "none";
   VERTMOBILEBLACK.style.display =
     VERTMOBILEBLACK.style.display == "inline-block" ? "" : "inline-block";
 };
-VERTMOBILEBLACK.onclick = function() {
+NAVIGATIONMOBILEVERTIKALBLACK.onclick = function() {
   VERTMOBILE.style.display =
     VERTMOBILE.style.display == "inline-block" ? "" : "inline-block";
   VERTMOBILEBLACK.style.display =
     VERTMOBILEBLACK.style.display == "none" ? "" : "none";
 };
-HORMOBILE.onclick = function() {
+NAVIGATIONMOBILEHORISONTAL.onclick = function() {
   HORMOBILE.style.display = HORMOBILE.style.display == "none" ? "" : "none";
   HORMOBILEBLACK.style.display =
     HORMOBILEBLACK.style.display == "inline-block" ? "" : "inline-block";
 };
-HORMOBILEBLACK.onclick = function() {
+NAVIGATIONMOBILEHORISONTALBLACK.onclick = function() {
   HORMOBILE.style.display =
     VERTMOBILE.style.display == "inline-block" ? "" : "inline-block";
   HORMOBILEBLACK.style.display =
