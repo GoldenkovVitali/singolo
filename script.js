@@ -11,13 +11,30 @@ const NAVIGATIONMOBILEVERTIKAL = document.getElementById("Navigation-mobile-vert
 const NAVIGATIONMOBILEVERTIKALBLACK = document.getElementById("Navigation-mobile-vertical-black");
 const NAVIGATIONMOBILEHORISONTAL = document.getElementById("Navigation-mobile-horisontal");
 const NAVIGATIONMOBILEHORISONTALBLACK = document.getElementById("Navigation-mobile-horisontal-black");
-//--------------------MENU-------------------------------
+//--------------------MENU tutch-------------------------------
 MENU.addEventListener("click", event => {
   MENU.querySelectorAll("a").forEach(el => el.classList.remove("active"));
   if (event.target.tagName == "A") {
     event.target.classList.add("active");
   }
 });
+//--------------------MENU scroll-------------------------------
+document.addEventListener('scroll', onscroll);
+function onscroll(event){
+const curPos=(window.scrollY+1);
+const section = document.querySelectorAll('#wrapper>section');
+const links = document.querySelectorAll('#menu-center a');
+  section.forEach((el) => {
+  if(el.offsetTop <= curPos  &&  (el.offsetTop + el.offsetHeight) > curPos ) {
+  links.forEach((a) => {
+  a.classList.remove('active');
+  if (el.getAttribute('id') === a.getAttribute('href').substring(1)) {
+  a.classList.add('active');
+  }
+  })
+  }
+});
+}
 
 //------------------mobile-section--------display----------------
 NAVIGATIONMOBILEVERTIKAL.onclick = function() {
