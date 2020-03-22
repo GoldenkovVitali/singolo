@@ -4,24 +4,55 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Singolo</title>
     <link rel="stylesheet" href="index.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap"
       rel="stylesheet"
     />
-    <script async src="script.js" ></script>
+    <script async src="script.js"></script>
   </head>
 
   <body id="wrapper">
     <header class="header" id="menu">
+      <div class="dropt-column" id="dropt-column">
+        <nav class="nav-container-drop">
+          <h1>
+            <img
+              class="ikon-drop2"
+              id="ikon-drop2"
+              src="assets/Burger-menu-icon2.png"
+              width="25"
+              height="20"
+              alt="ikon-drop"
+            />
+            <a class="logo-drop" href="#"> SINGOLO<span>*</span> </a>
+          </h1>
+          <ul class="main-nav-drop" id="menu-center">
+            <li><a class="active" href="#home">HOME</a></li>
+            <li class=""><a href="#services">SERVICES</a></li>
+            <li class=""><a href="#portfolio">PORTFOLIO</a></li>
+            <li class=""><a href="#about">ABOUT</a></li>
+            <li class=""><a href="#contact">CONTACT</a></li>
+          </ul>
+        </nav>
+      </div>
+
       <div class="header-wrapper">
         <nav class="nav-container">
+          <img
+            class="ikon-drop1"
+            id="ikon-drop1"
+            src="assets/Burger-menu-icon1.png"
+            width="25"
+            height="20"
+            alt="ikon-drop"
+          />
           <h1 class="logo">
             <a href="#"> SINGOLO<span>*</span> </a>
           </h1>
-          
+
           <ul class="main-nav" id="menu-center">
             <li><a class="active" href="#home">HOME</a></li>
             <li class="dot">&#183;</li>
@@ -33,63 +64,106 @@
             <li class="dot">&#183;</li>
             <li class=""><a href="#contact">CONTACT</a></li>
           </ul>
-        
-
         </nav>
-      </>
+      </div>
     </header>
 
     <!--Section 1 -->
-   
+
     <section class="slider" id="home">
+      <div class="arrows">
+        <div class="arrow-left">
+          <a href="#"> <img src="assets/chev.png" alt="chev" /> </a>
+        </div>
+
+        <div class="arrow-right">
+          <a href="#"> <img src="assets/chev1.png" alt="chev1" /> </a>
+        </div>
+      </div>
+
       <div class="item-wrapper">
-         <div class="item active">
-           <div class="mobile-section">
-           <div class="mobile-wrapper">
-                <img class="mobile_vertical"  id="mobile-vertical" src="assets/mobile-vertical.png" width="240" height="483"
-                alt="mobile" usemap="#Navigation-mobile-vertical">
-                <map id="Navigation-mobile-vertical" name="Navigation-mobile-vertical">
-                  <area shape="rect" coords="0,0,215,458" alt="Navigation"> 
-                </map>
-               <img class="mobile-vertical-black" id="mobile-vertical-black" src="assets/iPhoneVertical-Black.png" alt="iPhone Vertical" width="240" height="483"
-                alt="mobile" usemap="#Navigation-mobile-vertical-black"/>
-                <map id="Navigation-mobile-vertical-black" name="Navigation-mobile-vertical-black">
-                  <area shape="rect" coords="0,0,215,458" alt="Navigation"> 
-                </map>
+        <div class="item active">
+          <div class="mobile-section">
+            <div class="mobile-wrapper">
+              <img
+                class="mobile_vertical"
+                id="mobile-vertical"
+                src="assets/mobile-vertical.png"
+                width="240"
+                height="483"
+                alt="mobile"
+                usemap="#Navigation-mobile-vertical"
+              />
+              <map
+                id="Navigation-mobile-vertical"
+                name="Navigation-mobile-vertical"
+              >
+                <area shape="rect" coords="0,0,215,458" alt="Navigation" />
+              </map>
+              <img
+                class="mobile-vertical-black"
+                id="mobile-vertical-black"
+                src="assets/iPhoneVertical-Black.png"
+                alt="iPhone Vertical"
+                width="240"
+                height="483"
+                alt="mobile"
+                usemap="#Navigation-mobile-vertical-black"
+              />
+              <map
+                id="Navigation-mobile-vertical-black"
+                name="Navigation-mobile-vertical-black"
+              >
+                <area shape="rect" coords="0,0,215,458" alt="Navigation" />
+              </map>
 
+              <img
+                class="mobile_horizontal"
+                id="mobile-horisontal"
+                src="assets/mobile-horizontal.png"
+                width="483"
+                height="240"
+                alt="mobile"
+                usemap="#Navigation-mobile-horisontal"
+              />
+              <map
+                id="Navigation-mobile-horisontal"
+                name="Navigation-mobile-horisontal"
+              >
+                <area shape="rect" coords="0,0,458,215" alt="Navigation" />
+              </map>
 
-                <img class="mobile_horizontal" id="mobile-horisontal" src="assets/mobile-horizontal.png"
-                width="483" height="240" alt="mobile" usemap="#Navigation-mobile-horisontal">
-                <map id="Navigation-mobile-horisontal" name="Navigation-mobile-horisontal">
-                  <area shape="rect" coords="0,0,458,215" alt="Navigation"> 
-                </map>
+              <img
+                class="mobile-horisontal-black"
+                id="mobile-horisontal-black"
+                src="assets/iPhoneHorizontal-Black.png"
+                alt="iPhone Horizontal"
+                width="483"
+                height="240"
+                usemap="#Navigation-mobile-horisontal-black"
+              />
+              <map
+                id="Navigation-mobile-horisontal-black"
+                name="Navigation-mobile-horisontal-black"
+              >
+                <area shape="rect" coords="0,0,458,215" alt="Navigation" />
+              </map>
+            </div>
+          </div>
+        </div>
 
-                <img class="mobile-horisontal-black" id="mobile-horisontal-black" src="assets/iPhoneHorizontal-Black.png" alt="iPhone Horizontal" width="483" height="240" usemap="#Navigation-mobile-horisontal-black"/>
-                <map id="Navigation-mobile-horisontal-black" name="Navigation-mobile-horisontal-black">
-                  <area shape="rect" coords="0,0,458,215" alt="Navigation"> 
-                </map>
-              
-              </div>
-           </div>
-
-         </div> 
-
-         <div class="item">
+        <div class="item">
           <div class="slider-image">
-                <img class="slider-image-img" src="assets/slider.png" alt="slider" height="592px" />
+            <img
+              class="slider-image-img"
+              src="assets/slider.png"
+              alt="slider"
+              height="592px"
+            />
           </div>
         </div>
       </div>
-      
-      <div class="arrow-left">
-        <a href="#"> <img src="assets/chev.png" alt="chev" /> </a>
-      </div>
-
-      <div class="arrow-right">
-        <a href="#"> <img src="assets/chev1.png" alt="chev1"/> </a>
-      </div>
- 
-</section>
+    </section>
 
     <!--Section 2 -->
     <section class="our-servises" id="services">
@@ -100,7 +174,7 @@
             <p>
               Fusce dapibus, tellus ac cursus commodo, tortor mauris
               condimentum. Duis mollis, non commodo luctus, nisi erat porttitor
-                          ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac
+              ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac
               cursus commodo, tortor mauris condimentum nibh.
             </p>
           </div>
@@ -217,68 +291,85 @@
             </ul>
           </div>
           <div class="portfolio-container" id="portfolio-image">
-            <img 
+            <img
               src="assets/Image_1.png"
-              alt="portfolio-image_1" width=220px; height=187px;
+              alt="portfolio-image_1"
+              width="220px;"
+              height="187px;"
             />
             <img
               src="assets/Image_2.png"
-              alt="portfolio-image_2" width=220px; height=187px;
+              alt="portfolio-image_2"
+              width="220px;"
+              height="187px;"
             />
             <img
               src="assets/Image_3.png"
-              alt="portfolio-image_3" width=220px; height=187px;
+              alt="portfolio-image_3"
+              width="220px;"
+              height="187px;"
             />
             <img
               src="assets/Image_4.png"
-              alt="portfolio-image_4"width=220px; height=187px;
+              alt="portfolio-image_4"
+              width="220px;"
+              height="187px;"
             />
             <img
               src="assets/Image_5.png"
-              alt="portfolio-image_5"width=220px; height=187px;
+              alt="portfolio-image_5"
+              width="220px;"
+              height="187px;"
             />
             <img
-   
               src="assets/Image_6.png"
-              alt="portfolio-image_6"width=220px; height=187px;
+              alt="portfolio-image_6"
+              width="220px;"
+              height="187px;"
             />
             <img
-            
               src="assets/Image_7.png"
-              alt="portfolio-image_7"width=220px; height=187px;
+              alt="portfolio-image_7"
+              width="220px;"
+              height="187px;"
             />
             <img
-        
               src="assets/Image_8.png"
-              alt="portfolio-image_8"width=220px; height=187px;
+              alt="portfolio-image_8"
+              width="220px;"
+              height="187px;"
             />
             <img
-   
               src="assets/Image_9.png"
-              alt="portfolio-image_9"width=220px; height=187px;
+              alt="portfolio-image_9"
+              width="220px;"
+              height="187px;"
             />
             <img
-           
               src="assets/Image_10.png"
-              alt="portfolio-image_10"width=220px; height=187px;
+              alt="portfolio-image_10"
+              width="220px;"
+              height="187px;"
             />
             <img
-        
               src="assets/Image_11.png"
-              alt="portfolio-image_11"width=220px; height=187px;
+              alt="portfolio-image_11"
+              width="220px;"
+              height="187px;"
             />
             <img
-        
               src="assets/Image_12.png"
-              alt="portfolio-image_12"width=220px; height=187px;
+              alt="portfolio-image_12"
+              width="220px;"
+              height="187px;"
             />
-           </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="about-us" id="about" >
-      <div class="wrapper" >
+    <section class="about-us" id="about">
+      <div class="wrapper">
         <div class="about-us-wrapper">
           <h2 class="about-us__header">About Us</h2>
           <p class="about-us__text">
@@ -287,6 +378,7 @@
             lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo,
             tortor mauris condimentum nibh.
           </p>
+
           <div class="about-us-container">
             <div class="about-us__items">
               <img
@@ -374,6 +466,141 @@
                 alt="linkedin"
               />
             </div>
+            <div class="about-us__socials">
+              <img
+                class="about-us__icon"
+                src="assets/facebook.png"
+                alt="facebook"
+              />
+              <img
+                class="about-us__icon"
+                src="assets/google+.png"
+                alt="google"
+              />
+              <img
+                class="about-us__icon"
+                src="assets/twitter.png"
+                alt="twitter"
+              />
+              <img
+                class="about-us__icon"
+                src="assets/linkedin.png"
+                alt="linkedin"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- section "about-us - new"-->
+
+    <section class="about-us-new" id="about">
+      <div class="wrapper">
+        <div class="about-us-wrapper">
+          <h2 class="about-us__header">About Us</h2>
+          <p class="about-us__text">
+            Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum.
+            Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget
+            lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo,
+            tortor mauris condimentum nibh.
+          </p>
+
+          <div class="about-us-container">
+            <div class="about-us__items">
+              <img
+                class="about-us__image"
+                src="assets/Adam_Jensen.png"
+                alt="Adam Jensen"
+              />
+            </div>
+
+            <div class="about-us__profiles Adam">
+              <span class="about-us__profile-name">Adam Jensen</span>
+              <p class="about-us__profile-description">
+                Quisque luctus, quam eget molestie commodo, lacus purus cursus
+                purus, nec rutrum tellus dolor id lorem.
+              </p>
+            </div>
+
+            <div class="about-us__socials">
+              <img
+                class="about-us__icon"
+                src="assets/facebook.png"
+                alt="facebook"
+              />
+              <img
+                class="about-us__icon"
+                src="assets/google+.png"
+                alt="google"
+              />
+              <img
+                class="about-us__icon"
+                src="assets/twitter.png"
+                alt="twitter"
+              />
+              <img
+                class="about-us__icon"
+                src="assets/linkedin.png"
+                alt="linkedin"
+              />
+            </div>
+
+            <div class="about-us__items">
+              <img
+                class="about-us__image"
+                src="assets/Desmond_Miles.png"
+                alt="Desmond Miles"
+              />
+            </div>
+
+            <div class="about-us__profiles">
+              <span class="about-us__profile-name">Desmond Miles</span>
+              <p class="about-us__profile-description">
+                Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam
+                laoreet, viverra lacus ut, ultrices velit.
+              </p>
+            </div>
+
+            <div class="about-us__socials">
+              <img
+                class="about-us__icon"
+                src="assets/facebook.png"
+                alt="facebook"
+              />
+              <img
+                class="about-us__icon"
+                src="assets/google+.png"
+                alt="google"
+              />
+              <img
+                class="about-us__icon"
+                src="assets/twitter.png"
+                alt="twitter"
+              />
+              <img
+                class="about-us__icon"
+                src="assets/linkedin.png"
+                alt="linkedin"
+              />
+            </div>
+
+            <div class="about-us__items">
+              <img
+                class="about-us__image"
+                src="assets/Scolara_Visari.png"
+                alt="Scolara Visari"
+              />
+            </div>
+
+            <div class="about-us__profiles">
+              <span class="about-us__profile-name">Scolara Visari</span>
+              <p class="about-us__profile-description">
+                Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet
+                turpis, et consequat felis. Quisque condimentum.
+              </p>
+            </div>
+
             <div class="about-ussocials">
               <img
                 class="about-us__icon"
@@ -400,6 +627,7 @@
         </div>
       </div>
     </section>
+
     <!-- section "contact-information"-->
 
     <section class="contact-information" id="contact">
@@ -407,10 +635,13 @@
         <div id="message-block" class="hidden">
           <div id="message" class="hidden">
             <p id="sendLetter" class="result-subject-text">
-              Письмо отправлено  </p> <br />
-              <span id="result_subject" class="result-subject-text"> </span> <br />
-              <span id="result_describe" class="result-subject-text"> </span>
-           
+              Письмо отправлено
+            </p>
+            <br />
+            <span id="result_subject" class="result-subject-text"> </span>
+            <br />
+            <span id="result_describe" class="result-subject-text"> </span>
+
             <br />
             <button id="close-btn">OK</button>
           </div>

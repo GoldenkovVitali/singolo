@@ -36,6 +36,24 @@ const links = document.querySelectorAll('#menu-center a');
 });
 }
 
+//--------------------HEADER DROUP MENU-------------------------------
+const IKONDROP1 = document.getElementById("ikon-drop1");
+const IKONDROP2 = document.getElementById("ikon-drop2");
+const DROPTKOLUMN = document.getElementById("dropt-column");
+
+
+IKONDROP1.onclick = function() {
+DROPTKOLUMN.style.display = "inline-block";
+IKONDROP1.style.display ="none";
+          
+}
+
+IKONDROP2.onclick = function() {
+DROPTKOLUMN.style.display = "none";
+IKONDROP1.style.display ="block";
+}
+
+
 //------------------mobile-section--------display----------------
 NAVIGATIONMOBILEVERTIKAL.onclick = function() {
   VERTMOBILE.style.display = VERTMOBILE.style.display == "none" ? "" : "none";
