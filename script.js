@@ -7,10 +7,18 @@ const VERTMOBILE = document.getElementById("mobile-vertical");
 const VERTMOBILEBLACK = document.getElementById("mobile-vertical-black");
 const HORMOBILE = document.getElementById("mobile-horisontal");
 const HORMOBILEBLACK = document.getElementById("mobile-horisontal-black");
-const NAVIGATIONMOBILEVERTIKAL = document.getElementById("Navigation-mobile-vertical");
-const NAVIGATIONMOBILEVERTIKALBLACK = document.getElementById("Navigation-mobile-vertical-black");
-const NAVIGATIONMOBILEHORISONTAL = document.getElementById("Navigation-mobile-horisontal");
-const NAVIGATIONMOBILEHORISONTALBLACK = document.getElementById("Navigation-mobile-horisontal-black");
+const NAVIGATIONMOBILEVERTIKAL = document.getElementById(
+  "Navigation-mobile-vertical"
+);
+const NAVIGATIONMOBILEVERTIKALBLACK = document.getElementById(
+  "Navigation-mobile-vertical-black"
+);
+const NAVIGATIONMOBILEHORISONTAL = document.getElementById(
+  "Navigation-mobile-horisontal"
+);
+const NAVIGATIONMOBILEHORISONTALBLACK = document.getElementById(
+  "Navigation-mobile-horisontal-black"
+);
 //--------------------MENU tutch-------------------------------
 MENU.addEventListener("click", event => {
   MENU.querySelectorAll("a").forEach(el => el.classList.remove("active"));
@@ -19,21 +27,21 @@ MENU.addEventListener("click", event => {
   }
 });
 //--------------------MENU scroll-------------------------------
-document.addEventListener('scroll', onscroll);
-function onscroll(event){
-const curPos=(window.scrollY+1);
-const section = document.querySelectorAll('#wrapper>section');
-const links = document.querySelectorAll('#menu-center a');
-  section.forEach((el) => {
-  if(el.offsetTop <= curPos  &&  (el.offsetTop + el.offsetHeight) > curPos ) {
-  links.forEach((a) => {
-  a.classList.remove('active');
-  if (el.getAttribute('id') === a.getAttribute('href').substring(1)) {
-  a.classList.add('active');
-  }
-  })
-  }
-});
+document.addEventListener("scroll", onscroll);
+function onscroll(event) {
+  const curPos = window.scrollY + 1;
+  const section = document.querySelectorAll("#wrapper>section");
+  const links = document.querySelectorAll("#menu-center a");
+  section.forEach(el => {
+    if (el.offsetTop <= curPos && el.offsetTop + el.offsetHeight > curPos) {
+      links.forEach(a => {
+        a.classList.remove("active");
+        if (el.getAttribute("id") === a.getAttribute("href").substring(1)) {
+          a.classList.add("active");
+        }
+      });
+    }
+  });
 }
 
 //--------------------HEADER DROUP MENU-------------------------------
@@ -41,18 +49,15 @@ const IKONDROP1 = document.getElementById("ikon-drop1");
 const IKONDROP2 = document.getElementById("ikon-drop2");
 const DROPTKOLUMN = document.getElementById("dropt-column");
 
-
 IKONDROP1.onclick = function() {
-DROPTKOLUMN.style.display = "inline-block";
-IKONDROP1.style.display ="none";
-          
-}
+  DROPTKOLUMN.style.display = "inline-block";
+  IKONDROP1.style.display = "none";
+};
 
 IKONDROP2.onclick = function() {
-DROPTKOLUMN.style.display = "none";
-IKONDROP1.style.display ="block";
-}
-
+  DROPTKOLUMN.style.display = "none";
+  IKONDROP1.style.display = "block";
+};
 
 //------------------mobile-section--------display----------------
 NAVIGATIONMOBILEVERTIKAL.onclick = function() {
@@ -134,24 +139,27 @@ document.querySelector(".arrow-right").addEventListener("click", function() {
 //---------------------portfolio-section------------------------
 
 TAB.addEventListener("click", event => {
-  TAB.querySelectorAll("button").forEach(el => el.classList.remove("active"));
   if (event.target.tagName == "BUTTON") {
-    event.target.classList.add("active");
-  }
-
+  TAB.querySelectorAll("button").forEach(el => el.classList.remove("active"));
+   event.target.classList.add("active");
   const mixRand = (a, b) => Math.random() - 0.5;
   let arrImg = Array.from(
       document.getElementById("portfolio-image").getElementsByTagName("img")
-    ),
-    arrImgSrcMix = arrImg.map(e => e.src).sort(mixRand);
+    ), 
+  arrImgSrcMix = arrImg.map(e => e.src).sort(mixRand);
   arrImg.map((e, i) => (e.src = arrImgSrcMix[i]));
+  }
 });
 
 PORTPHOLIOIMAGE.addEventListener("click", event => {
-  PORTPHOLIOIMAGE.querySelectorAll("img").forEach(el =>
-    el.classList.remove("actives")
-  );
-  event.target.classList.add("actives");
+  if (event.target.tagName == "IMG") {
+    PORTPHOLIOIMAGE.querySelectorAll("img").forEach(el =>
+      el.classList.remove("actives")
+    );
+  }
+  if (event.target.tagName == "IMG") {
+    event.target.classList.add("actives");
+  }
 });
 
 //---------section-contact-information--------------
@@ -164,7 +172,7 @@ BUTTON.addEventListener("click", () => {
   if (!name || !email) {
     document.getElementById("sendLetter").classList.add("hidden-email");
     document.getElementById("result_subject").innerText =
-      "Введите данные в полях Name или Email в нужном формате";
+      "Введите данные в полях Name или Email в правильном формате";
     document.getElementById("message-block").classList.remove("hidden");
   }
 
