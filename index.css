@@ -704,6 +704,7 @@ body {
   text-align: center;
   padding-left: 0px;
   border: 1px solid white;
+  background-color: #FBC65F;
 }
 .submit:hover {
   cursor: pointer;
@@ -1297,6 +1298,7 @@ body {
   }
   .submit {
     width: 100%;
+    
   }
 
   .contacts-item-info {
@@ -1380,7 +1382,7 @@ body {
   }
 
   .portfolio-container {
-    width: 260px;
+    width: 259px;
     height: 490px;
     margin: 0 auto;
     margin-top: 20px;
