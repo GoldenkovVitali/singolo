@@ -120,11 +120,15 @@ body {
 }
 
 .dropt-column {
-  display: none;
+  
   position: fixed;
   width: 278px;
   height: 100%;
   background-color: #2d303a;
+}
+
+.dropt-column-hidden {
+  display: none;
 }
 
 .main-nav-drop {
